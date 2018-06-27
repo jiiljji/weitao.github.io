@@ -1,0 +1,97 @@
+body
+{
+    background:url("../images/beijing.jpg");
+}
+
+* {
+    list-style: none;
+    text-decoration: none;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.foldButton {
+    display: inline-block;
+    width: 45px;
+    float: left;
+}
+
+nav {
+    margin: 0;
+    padding: .5em;
+}
+
+.navList {
+    width: 100%;
+    display: none;
+    text-align: left;
+    clear:both;
+    
+}
+
+.clearfix:after {
+    content:"";
+    display: table;
+    clear: both;
+}
+
+.all{
+    min-height: calc(100vh - 55.4px);
+    background: url("../images/1.jpg");
+    background-size: cover;
+    background-position: center center;
+    text-align: center;
+    padding: 1em 0;
+    height: 250px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    color: white;
+    text-shadow:1px 1px 1px black;
+}
+
+footer {
+    padding: 1em .5em;
+    text-align: center;
+    background-color: skyblue;
+}
+
+.one {
+    background-color:darksalmon;
+}
+
+.two {
+    background-color:aquamarine;
+}
+
+.three {
+    background-color: #FDAF4C;
+}
+
+/* ================================= 
+视窗宽度为700时，进行运行以下规则
+==================================== */
+    
+    .wrap {
+        display: flex;
+        justify-content: space-around;
+        width: 100%;
+        margin: auto;
+    }
+    
+    .one, .two, .three {
+        flex-basis: 30%;
+        flex-grow: 1;
+    }
+    
+    .col {
+        margin-left: 1em;
+        margin-right: 1em;
+        border-radius: 10px;
+    }
+    
+    h1 {
+        font-size: 2em;
+        margin: 0;
+    }
+}   
